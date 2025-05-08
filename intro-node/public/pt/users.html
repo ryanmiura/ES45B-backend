@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <a href="/en/users">English</a>
+            <a href="/pt/users" style="font-weight: bold;">Português</a>
+        </div>
+        
+        <h1>Lista dos 5 Primeiros Usuários</h1>
+        
+        <nav>
+            <a href="/pt">Início</a>
+            <a href="/pt/users">Usuários</a>
+            <a href="/pt/about">Sobre</a>
+        </nav>
+        
+        <div class="content">
+            <ul class="user-list">
+                <!-- Esta lista será preenchida dinamicamente pelo servidor -->
+                {{userList}}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
