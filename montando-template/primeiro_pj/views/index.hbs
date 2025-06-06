@@ -1,0 +1,15 @@
+<div class="homepage">
+    {{> paragrafo texto="Bem-vindo ao nosso sistema!" subtexto="Aqui você pode gerenciar usuários e acessar diversas funcionalidades."}}
+    
+    <h2>Usuários Cadastrados</h2>
+    {{> tabela-usuarios}}
+    
+    <div class="acoes">
+        <h3>O que você deseja fazer?</h3>
+        {{> paragrafo texto="Escolha uma das opções abaixo:"}}
+        <ul>
+            <li><a href="/cadastro">Cadastrar novo usuário</a></li>
+            <li><a href="/login">Fazer login no sistema</a></li>
+        </ul>
+    </div>
+</div>

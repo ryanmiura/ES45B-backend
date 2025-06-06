@@ -1,0 +1,24 @@
+<div class="cadastro-page">
+    <h1>{{title}}</h1>
+    
+    {{> paragrafo texto="Preencha o formulário abaixo para se cadastrar" subtexto="Todos os campos são obrigatórios"}}
+    
+    {{> form-cadastro}}
+    
+    <div class="links">
+        {{> paragrafo texto="Já possui uma conta?"}}
+        <a href="/login">Faça login aqui</a>
+    </div>
+</div>
+
+<style>
+    .cadastro-page {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .links {
+        margin-top: 2rem;
+        text-align: center;
+    }
+</style>

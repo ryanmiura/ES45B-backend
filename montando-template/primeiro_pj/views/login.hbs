@@ -1,0 +1,24 @@
+<div class="login-page">
+    <h1>{{title}}</h1>
+    
+    {{> paragrafo texto="Digite suas credenciais para acessar o sistema" subtexto="Informe seu email e senha cadastrados"}}
+    
+    {{> form-login}}
+    
+    <div class="links">
+        {{> paragrafo texto="Ainda não possui uma conta?"}}
+        <a href="/cadastro">Cadastre-se aqui</a>
+    </div>
+</div>
+
+<style>
+    .login-page {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .links {
+        margin-top: 2rem;
+        text-align: center;
+    }
+</style>

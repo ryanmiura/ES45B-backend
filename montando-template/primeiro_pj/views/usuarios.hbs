@@ -1,0 +1,28 @@
+<div class="usuarios-page">
+    <h1>{{title}}</h1>
+    
+    {{> paragrafo texto="Lista completa de usuários cadastrados" subtexto="Veja abaixo todos os usuários do sistema"}}
+    
+    {{> tabela-usuarios}}
+    
+    <div class="acoes">
+        {{> paragrafo texto="Deseja adicionar um novo usuário?"}}
+        <a href="/cadastro" class="btn-submit">Cadastrar Usuário</a>
+    </div>
+</div>
+
+<style>
+    .usuarios-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .acoes {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .acoes a {
+        display: inline-block;
+        text-decoration: none;
+    }
+</style>

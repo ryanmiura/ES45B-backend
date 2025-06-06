@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .navbar { background: #f8f9fa; padding: 1rem; margin-bottom: 2rem; }
+        .navbar-menu { display: inline-block; }
+        .navbar-item { margin: 0 1rem; text-decoration: none; color: #333; }
+        .form { max-width: 500px; margin: 0 auto; padding: 1rem; }
+        .form-group { margin-bottom: 1rem; }
+        .form-control { width: 100%; padding: 0.5rem; }
+        .table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        .table th, .table td { padding: 0.5rem; border: 1px solid #ddd; }
+        .btn-submit { padding: 0.5rem 1rem; background: #007bff; color: white; border: none; }
+        .footer { background: #f8f9fa; padding: 1rem; margin-top: 2rem; text-align: center; }
+        .footer-links a { margin: 0 1rem; text-decoration: none; color: #333; }
+    </style>
+</head>
+<body>
+    {{> navbar}}
+    
+    <main class="container">
+        {{{body}}}
+    </main>
+
+    {{> footer}}
+</body>
+</html>
